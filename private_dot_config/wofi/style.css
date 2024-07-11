@@ -1,0 +1,87 @@
+window {
+    margin: 0px;
+    border: 2px solid #bd93f9;
+    background-color: #282a36;
+    border-radius: 0;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    background-color: #44475a;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: #282a36;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: #282a36;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+    overflow: hidden;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+}
+
+#entry.activatable #text {
+    color: #282a36;
+}
+
+#entry > * {
+    color: #f8f8f2;
+}
+
+#entry:selected {
+    background-color: #44475a;
+}
+
+#entry:selected #text {
+    font-weight: bold;
+}
+
+#entry:focus {
+    outline: none;
+}
+
+/* Hide scrollbar */
+scrollbar, 
+scrollbar * {
+    all: unset;
+    background: transparent;
+    border: none;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Target scroll indicators */
+scrolledwindow undershoot.top,
+scrolledwindow undershoot.bottom,
+scrolledwindow overshoot.top,
+scrolledwindow overshoot.bottom {
+    background-image: none;
+    border: none;
+}
+
+/* Additional rules to ensure no scrollbars */
+* {
+    scrollbar-width: none !important;
+}
+
+*::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}

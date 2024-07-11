@@ -1,0 +1,30 @@
+# Autocomplete
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/mje/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Editor
+export EDITOR=nvim
+
+# Prompt
+eval "$(starship init zsh)"
+
+# Aliases
+alias v=nvim
+alias pf=pfetch
+alias mu=musikcube
+alias clr=clear && printf '\e[3J'
+
+# Zoxide
+eval "$(zoxide init zsh)"

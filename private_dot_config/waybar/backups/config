@@ -1,0 +1,53 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 35,
+  "spacing": 4,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [],
+  "modules-right": [
+    "network",
+    "custom/divider1",
+    "battery",
+    "custom/divider2",
+    "clock",
+    "custom/spacing"
+  ],
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate"
+  },
+  "clock": {
+    "interval": 1,
+    "format": "{:%a %H:%M %d-%m}",
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": [" ", " ", " ", " ", " "]
+  },
+  "network": {
+    "interface": "wlan0",
+    "interval": 60,
+    "format": "{ifname}",
+    "format-wifi": "{signalStrength}%  ",
+    "format-disconnected": "",
+    "tooltip-format-wifi": "{essid}  ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+  "custom/spacing": {
+    "exec": "echo ' '",
+    "interval": 60
+  },
+  "custom/divider1": {
+    "exec": "echo '|'",
+    "interval": 60
+  },
+  "custom/divider2": {
+    "exec": "echo '|'",
+    "interval": 60
+  }
+}
+

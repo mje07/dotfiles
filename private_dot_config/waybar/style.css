@@ -1,0 +1,66 @@
+@import url("./colors.css");
+
+/* Global styling for waybar */
+window#waybar {
+    background: none;
+    color: @purple;
+    opacity: 0.9
+}
+
+/* Styling for left and right modules */
+.modules-left,
+.modules-right {
+	background: @background;
+	border: 2px solid @purple; /* remove this if you dont want a border */
+}
+
+.modules-right {
+	padding-left: 10px;
+}
+
+/* Styling for the workspaces module */
+#workspaces {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button.active {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button.empty {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button.persistent {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button.special {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button.visible {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button.urgent {
+    background-color: @background;
+    color: @purple;
+}
+
+#workspaces button.hosting-monitor {
+    background-color: @background;
+    color: @purple;
+}
+
